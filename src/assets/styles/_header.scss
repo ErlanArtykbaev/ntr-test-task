@@ -1,0 +1,35 @@
+.header {
+  display: grid;
+  grid-template-columns: 220px 50px auto;
+  box-sizing: border-box;
+
+  .title {
+    border-right: 2px solid #F1F3F3;
+    border-bottom: 2px solid #F1F3F3;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  .settings {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #F1F3F3;
+    border-bottom: 2px solid #60B69E;
+    cursor: pointer;
+  }
+
+  .search {
+    padding: 8px;
+    border-right: 2px solid #F1F3F3;
+    border-bottom: 2px solid #60B69E;
+    display: flex;
+    align-items: center;
+
+    .input {
+       border: none;
+    }
+  }
+}

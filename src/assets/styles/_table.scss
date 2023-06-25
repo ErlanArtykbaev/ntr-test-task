@@ -1,0 +1,98 @@
+.table {
+  width: 100vw;
+
+  .header {
+    display: grid;
+    grid-template-columns: 220px auto;
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .months {
+      display: grid;
+      grid-template-columns: repeat(12, 100px);
+
+      .month_cell {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 8px;
+        padding: 8px;
+        border-right: 2px solid #F1F3F3;
+        border-bottom: 2px solid #F1F3F3;
+
+        .month_text {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .content {
+    .row {
+      height: 60px;
+      display: grid;
+      grid-template-columns: 220px auto;
+
+      &.sub {
+        height: 40px;
+      }
+
+      .title {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        border-right: 2px solid #F1F3F3;
+        border-bottom: 2px solid #F1F3F3;
+        box-sizing: border-box;
+        padding: 8px;
+        font-weight: bold;
+        gap: 8px;
+        cursor: pointer;
+
+        &.summary {
+          cursor: default;
+          background-color: #F7FAFC;
+        }
+
+        &.sub {
+          font-weight: normal;
+          padding-left: 24px;
+          cursor: default;
+        }
+
+        .notes {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      .cells {
+        display: grid;
+        grid-template-columns: repeat(12, 100px);
+
+        &.summary {
+          background-color: #F6F8FA;
+        }
+
+        .cell {
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-end;
+          padding: 8px;
+          border-right: 2px solid #F1F3F3;
+          border-bottom: 2px solid #F1F3F3;
+          box-sizing: border-box;
+
+          &.selected {
+            border: 2px solid #F8DC87;
+            background-color: #FEFCF5;
+          }
+        }
+      }
+    }
+  }
+}

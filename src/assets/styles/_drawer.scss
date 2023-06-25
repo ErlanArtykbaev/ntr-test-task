@@ -1,0 +1,117 @@
+.drawer {
+  width: 460px;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: -460px;
+  box-sizing: border-box;
+  transition: 0.5s;
+
+  &.shown {
+    right: 0;
+  }
+
+  &_header {
+    background-color: #627491;
+    color: white;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+
+    .titles {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 10px;
+
+      .title {
+        font-size: 20px;
+      }
+
+      .close_drawer {
+        cursor: pointer;
+      }
+    }
+
+    .short_infos {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 16px;
+
+      .total_transactions {
+        color: #BBAD81;
+      }
+
+      .date {
+        opacity: 0.5;
+      }
+    }
+
+    .search_wrapper {
+      max-width: 100%;
+      box-sizing: border-box;
+
+      .search {
+        width: 100%;
+        border: none;
+        border-radius: 6px;
+        padding: 16px;
+        outline: none;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .content {
+    border-left: 2px solid #F1F3F3;
+
+    &_header {
+      border-bottom: 2px solid #F1F3F3;
+      padding: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .reports {
+
+      .report {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px;
+        height: 70px;
+        border-bottom: 2px solid #F1F3F3;
+
+        .titles {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 8px;
+
+          .date {
+            font-size: 14px;
+            color: grey;
+          }
+
+          .company {
+            font-weight: bold;
+            font-size: 18px;
+          }
+
+          .transaction {
+            font-size: 12px;
+            color: grey;
+          }
+
+        }
+        .value {
+
+        }
+      }
+    }
+
+  }
+}
